@@ -1,0 +1,19 @@
+{
+  "name": "nextjs_todo_list",
+  "version": "1.0.0",
+  "description": "interview test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "explorer http://localhost:3000 & next dev"
+  },
+  "author": "Denis Novozhilov",
+  "license": "ISC",
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.7.2",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.49.8"
+  }
+}
