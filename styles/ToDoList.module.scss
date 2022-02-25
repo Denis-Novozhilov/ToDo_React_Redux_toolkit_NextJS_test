@@ -1,0 +1,121 @@
+.container {
+    position: relative;
+}
+
+.cornerBorder {
+    border: none;
+    border-bottom: 1px solid #80ED99;
+    border-right: 1px solid #80ED99;
+}
+
+.taskInputBox {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 60px 10px 30px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    color: #38A3A5;
+
+    &::placeholder {
+        color: #57CC99;
+    }
+
+    &:focus {
+        outline: 2px solid #57CC99;
+    }
+}
+
+.taskInputButton {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    border-radius: 10px;
+    width: 60px;
+    height: 36px;
+    background: #80ED99;
+    font-size: 1.2em;
+    color: #FFF;
+
+    &:active {
+        height: 34px;
+        top: 27px;
+    }
+
+    &:focus {
+        outline: 2px solid #57CC99;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.containerTask {
+    margin: 0px auto 10px;
+    height: 62px;
+    font-size: 1.2em;
+    color: #38A3A5;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.chekedCondition {
+    outline: 1px solid #57CC99;
+    background-color: #C7F9CC;
+
+    .containerCheckBox {
+        background: center no-repeat url("../publick/checkmark.png");
+    }
+}
+
+.containerCheckBox {
+    color: #FFF;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #80ED99;
+    border-radius: 17px;
+    margin-left: 10px;
+
+    &:focus {
+        outline: 2px solid #57CC99;
+    }
+}
+
+.task {
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px 20px;
+    overflow: hidden;
+}
+
+.closedButton {
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 60px;
+    height: 36px;
+    background: #e6394752;
+    font-size: 1em;
+    color: #FFF;
+    padding: 4px;
+    border: none;
+
+    &:hover {
+        background: #e63947a4;
+    }
+
+    &:active {
+        background: #e63947a4;
+        outline: 2px solid #57CC99;
+        height: 34px;
+        top: 27px;
+    }
+    
+    &:focus {
+        background: #e63947a4;
+        outline: 2px solid #57CC99;
+    }
+}
