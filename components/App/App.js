@@ -4,8 +4,6 @@ import InputField from '../ToDoList/ToDoList';
 import cn from 'classnames';
 import s from '../../styles/App.module.scss';
 
-const initialTasksArr = ['task_01', 'task_02', ''];
-
 const App = () => {
 
     return (
@@ -16,7 +14,7 @@ const App = () => {
             </Head>
             <Container>
                 <h1 className={cn(s.heading)}>My ToDo App</h1>
-                <InputField initialTasks={initialTasksArr} />
+                <InputField/>
             </Container>
         </>
     );
