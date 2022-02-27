@@ -16,11 +16,11 @@ const toolkitSlice = createSlice({
         addToCheckedTasks(state, action) {
             state.checkedTasks.unshift(action.payload)
         },
-        removeFromCheckedTasks(state, action) {
+        removeCheckedTasks(state, action) {
             state.checkedTasks = state.checkedTasks.filter(task => task !== action.payload)
         },
     }
 });
 
 export default toolkitSlice.reducer;
-export const { addTaskToList, removeTaskFromList, addToCheckedTasks, removeFromCheckedTasks } = toolkitSlice.actions
+export const { addTaskToList, removeTaskFromList, addToCheckedTasks, removeCheckedTasks: removeCheckedTasks } = toolkitSlice.actions

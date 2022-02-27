@@ -1,11 +1,24 @@
 .container {
-    position: relative;
     margin: 10vh 20vw 5vh;
     padding: 20px;
     border-radius: 10px;
+    min-width: 370px;
 }
 
 .gradient {
     background: #C7F9CC;
     background: linear-gradient(181deg, #C7F9CC 0%, #fff 90%);
+}
+
+
+@media screen and (min-device-width: 469px) and (max-device-width: 768px) { 
+    .container {
+        margin: 10vh 10vw 5vh;
+    }
+}
+
+@media screen and (max-device-width: 468px) { 
+    .container {
+        margin: 0 auto;
+    }
 }
